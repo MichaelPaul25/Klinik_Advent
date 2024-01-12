@@ -7,12 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Content\Images\" />
-    <Folder Include="lib\chart\" />
-    <Folder Include="lib\easing\" />
-    <Folder Include="lib\tempusdominus\" />
-    <Folder Include="lib\waypoints\" />
-    <Folder Include="Script\" />
+    <Compile Remove="Content\**" />
+    <Content Remove="Content\**" />
+    <EmbeddedResource Remove="Content\**" />
+    <None Remove="Content\**" />
   </ItemGroup>
 
 </Project>

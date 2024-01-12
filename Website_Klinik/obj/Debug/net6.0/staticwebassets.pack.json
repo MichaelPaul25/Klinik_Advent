@@ -5,12 +5,36 @@
       "PackagePath": "staticwebassets\\Website_Klinik.bundle.scp.css"
     },
     {
+      "Id": "E:\\ASP.Net\\Website Klinik\\Website_Klinik\\Website_Klinik\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
       "Id": "E:\\ASP.Net\\Website Klinik\\Website_Klinik\\Website_Klinik\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "E:\\ASP.Net\\Website Klinik\\Website_Klinik\\Website_Klinik\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
       "Id": "E:\\ASP.Net\\Website Klinik\\Website_Klinik\\Website_Klinik\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "E:\\ASP.Net\\Website Klinik\\Website_Klinik\\Website_Klinik\\wwwroot\\img\\logo.png",
+      "PackagePath": "staticwebassets\\img\\logo.png"
+    },
+    {
+      "Id": "E:\\ASP.Net\\Website Klinik\\Website_Klinik\\Website_Klinik\\wwwroot\\img\\user.jpg",
+      "PackagePath": "staticwebassets\\img\\user.jpg"
+    },
+    {
+      "Id": "E:\\ASP.Net\\Website Klinik\\Website_Klinik\\Website_Klinik\\wwwroot\\img\\user.png",
+      "PackagePath": "staticwebassets\\img\\user.png"
+    },
+    {
+      "Id": "E:\\ASP.Net\\Website Klinik\\Website_Klinik\\Website_Klinik\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
     },
     {
       "Id": "E:\\ASP.Net\\Website Klinik\\Website_Klinik\\Website_Klinik\\wwwroot\\js\\site.js",
@@ -197,6 +221,18 @@
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
+      "Id": "E:\\ASP.Net\\Website Klinik\\Website_Klinik\\Website_Klinik\\wwwroot\\lib\\chart\\chart.min.js",
+      "PackagePath": "staticwebassets\\lib\\chart\\chart.min.js"
+    },
+    {
+      "Id": "E:\\ASP.Net\\Website Klinik\\Website_Klinik\\Website_Klinik\\wwwroot\\lib\\easing\\easing.js",
+      "PackagePath": "staticwebassets\\lib\\easing\\easing.js"
+    },
+    {
+      "Id": "E:\\ASP.Net\\Website Klinik\\Website_Klinik\\Website_Klinik\\wwwroot\\lib\\easing\\easing.min.js",
+      "PackagePath": "staticwebassets\\lib\\easing\\easing.min.js"
+    },
+    {
       "Id": "E:\\ASP.Net\\Website Klinik\\Website_Klinik\\Website_Klinik\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
@@ -243,6 +279,82 @@
     {
       "Id": "E:\\ASP.Net\\Website Klinik\\Website_Klinik\\Website_Klinik\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "E:\\ASP.Net\\Website Klinik\\Website_Klinik\\Website_Klinik\\wwwroot\\lib\\owlcarousel\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel"
+    },
+    {
+      "Id": "E:\\ASP.Net\\Website Klinik\\Website_Klinik\\Website_Klinik\\wwwroot\\lib\\owlcarousel\\assets\\ajax-loader.gif",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\ajax-loader.gif"
+    },
+    {
+      "Id": "E:\\ASP.Net\\Website Klinik\\Website_Klinik\\Website_Klinik\\wwwroot\\lib\\owlcarousel\\assets\\owl.carousel.css",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.carousel.css"
+    },
+    {
+      "Id": "E:\\ASP.Net\\Website Klinik\\Website_Klinik\\Website_Klinik\\wwwroot\\lib\\owlcarousel\\assets\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.carousel.min.css"
+    },
+    {
+      "Id": "E:\\ASP.Net\\Website Klinik\\Website_Klinik\\Website_Klinik\\wwwroot\\lib\\owlcarousel\\assets\\owl.theme.default.css",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.theme.default.css"
+    },
+    {
+      "Id": "E:\\ASP.Net\\Website Klinik\\Website_Klinik\\Website_Klinik\\wwwroot\\lib\\owlcarousel\\assets\\owl.theme.default.min.css",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.theme.default.min.css"
+    },
+    {
+      "Id": "E:\\ASP.Net\\Website Klinik\\Website_Klinik\\Website_Klinik\\wwwroot\\lib\\owlcarousel\\assets\\owl.theme.green.css",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.theme.green.css"
+    },
+    {
+      "Id": "E:\\ASP.Net\\Website Klinik\\Website_Klinik\\Website_Klinik\\wwwroot\\lib\\owlcarousel\\assets\\owl.theme.green.min.css",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.theme.green.min.css"
+    },
+    {
+      "Id": "E:\\ASP.Net\\Website Klinik\\Website_Klinik\\Website_Klinik\\wwwroot\\lib\\owlcarousel\\assets\\owl.video.play.png",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.video.play.png"
+    },
+    {
+      "Id": "E:\\ASP.Net\\Website Klinik\\Website_Klinik\\Website_Klinik\\wwwroot\\lib\\owlcarousel\\owl.carousel.js",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\owl.carousel.js"
+    },
+    {
+      "Id": "E:\\ASP.Net\\Website Klinik\\Website_Klinik\\Website_Klinik\\wwwroot\\lib\\owlcarousel\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\owl.carousel.min.js"
+    },
+    {
+      "Id": "E:\\ASP.Net\\Website Klinik\\Website_Klinik\\Website_Klinik\\wwwroot\\lib\\tempusdominus\\css\\tempusdominus-bootstrap-4.css",
+      "PackagePath": "staticwebassets\\lib\\tempusdominus\\css\\tempusdominus-bootstrap-4.css"
+    },
+    {
+      "Id": "E:\\ASP.Net\\Website Klinik\\Website_Klinik\\Website_Klinik\\wwwroot\\lib\\tempusdominus\\css\\tempusdominus-bootstrap-4.min.css",
+      "PackagePath": "staticwebassets\\lib\\tempusdominus\\css\\tempusdominus-bootstrap-4.min.css"
+    },
+    {
+      "Id": "E:\\ASP.Net\\Website Klinik\\Website_Klinik\\Website_Klinik\\wwwroot\\lib\\tempusdominus\\js\\moment-timezone.min.js",
+      "PackagePath": "staticwebassets\\lib\\tempusdominus\\js\\moment-timezone.min.js"
+    },
+    {
+      "Id": "E:\\ASP.Net\\Website Klinik\\Website_Klinik\\Website_Klinik\\wwwroot\\lib\\tempusdominus\\js\\moment.min.js",
+      "PackagePath": "staticwebassets\\lib\\tempusdominus\\js\\moment.min.js"
+    },
+    {
+      "Id": "E:\\ASP.Net\\Website Klinik\\Website_Klinik\\Website_Klinik\\wwwroot\\lib\\tempusdominus\\js\\tempusdominus-bootstrap-4.js",
+      "PackagePath": "staticwebassets\\lib\\tempusdominus\\js\\tempusdominus-bootstrap-4.js"
+    },
+    {
+      "Id": "E:\\ASP.Net\\Website Klinik\\Website_Klinik\\Website_Klinik\\wwwroot\\lib\\tempusdominus\\js\\tempusdominus-bootstrap-4.min.js",
+      "PackagePath": "staticwebassets\\lib\\tempusdominus\\js\\tempusdominus-bootstrap-4.min.js"
+    },
+    {
+      "Id": "E:\\ASP.Net\\Website Klinik\\Website_Klinik\\Website_Klinik\\wwwroot\\lib\\waypoints\\links.php",
+      "PackagePath": "staticwebassets\\lib\\waypoints\\links.php"
+    },
+    {
+      "Id": "E:\\ASP.Net\\Website Klinik\\Website_Klinik\\Website_Klinik\\wwwroot\\lib\\waypoints\\waypoints.min.js",
+      "PackagePath": "staticwebassets\\lib\\waypoints\\waypoints.min.js"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Website_Klinik.Microsoft.AspNetCore.StaticWebAssets.props",
