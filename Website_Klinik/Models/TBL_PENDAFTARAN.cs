@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Website_Klinik.Models
 {
@@ -6,8 +7,11 @@ namespace Website_Klinik.Models
     {
         [Key]
         public int ID_PENDAFTARAN { get; set; }
+        [ForeignKey("ID_PASIEN")]
         public int ID_PASIEN { get; set; }
+        [ForeignKey("ID_ADMIN")]
         public int ID_ADMIN { get; set; }
+        public TBL_PASIEN? PASIEN { get; set; }
         public string NAMA_PASIEN { get; set; }
         public string UNIT_DITUJU { get; set; }
         public string ID_TINDAKAN { get; set; }

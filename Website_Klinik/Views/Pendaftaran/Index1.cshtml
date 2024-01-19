@@ -1,0 +1,276 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model IEnumerable<Website_Klinik.Models.TBL_PENDAFTARAN>
+
+@* PENDAFTARAN *@
+
+@{
+    ViewData["Title"] = "Pendaftaran";
+}
+
+<style>
+    /* Sidebar Active */
+    #PendaftaranNav {
+        color: var(--primary);
+        background: #FFFFFF;
+        border-color: var(--primary);
+    }
+</style>
+
+<div class="container-fluid pt-4 px-4">
+    <h2 class="text-primary">Pendaftaran Pasien</h2>
+    <!---------START UPPER BUTTON------------->
+    <div class="bg-light rounded h-50 p-4">
+        <div class="btn-group" role="group">
+            <button type="button" class="btn btn-outline-primary"><i class="fa fa-floppy-disk me-1"></i>Save</button>
+            <button type="button" class="btn btn-outline-success"><i class="fa fa-check me-1"></i>Submit</button>
+            <button type="button" class="btn btn-outline-danger"><i class="fa fa-trash me-1"></i>Delete</button>
+        </div>
+
+    </div>
+    <br>
+    <div>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Nomor Rekam Medis : </span>
+            <input type="text" class="form-control" placeholder="XX-YYYY-MM-DD" aria-label="Username" aria-describedby="basic-addon1" disabled>
+            <span class="input-group-text" id="basic-addon1">Status Form: </span>
+            <input type="text" class="form-control" placeholder="DRAFT" aria-label="Username" aria-describedby="basic-addon1" disabled>
+        </div>
+    </div>
+    <!---------END UPPER BUTTON------------->
+    <div class="container-fluid pt-4 px-4">
+        <div class="row g-4">
+            <!---------START FORM INPUT DATA PENDAFTARAN------------->
+            <div class="col-sm-12 col-xl-6">
+                <div class="bg-light rounded h-100 p-4">
+                    <h6 class="mb-4">Data Pasien</h6>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="inputNamaPasien"
+                               placeholder="Cth: Budi">
+                        <label for="inputNamaPasien">Nama Pasien</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="tempatLahir"
+                               placeholder="Tempat Lahir">
+                        <label for="tempatLahir">Tempat Lahir</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="inputUmur"
+                               placeholder="Umur">
+                        <label for="inputUmur">Umur</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <div class="h-75 bg-light rounded p-4">
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <h6 class="mb-0">Tanggal Lahir</h6>
+                                <a href="">Show All</a>
+                            </div>
+                            <div id="calender"></div>
+                        </div>
+                    </div>
+                    <fieldset class="row mb-3">
+                        <legend class="col-form-label col-sm-4 pt-0">Jenis Kelamin: </legend>
+                        <div class="col-sm-10">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios"
+                                       id="gridRadios1" value="option1">
+                                <label class="form-check-label" for="gridRadios1">
+                                    Laki-Laki
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios"
+                                       id="gridRadios2" value="option2">
+                                <label class="form-check-label" for="gridRadios2">
+                                    Perempuan
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="form-floating mb-3">
+                        <select class="form-select" id="inputAgama"
+                                aria-label="Floating label select">
+                            <option selected>Pilih Agama</option>
+                            <option value="1">Kristen</option>
+                            <option value="2">Islam</option>
+                            <option value="3">Katolik</option>
+                            <option value="4">Hindu</option>
+                            <option value="5">Budha</option>
+                            <option value="6">Khonghucu</option>
+                        </select>
+                        <label for="inputAgama">Agama</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" placeholder="Leave a comment here"
+                                  id="floatingTextarea" style="height: 150px;"></textarea>
+                        <label for="floatingTextarea">Alamat Tempat Tinggal</label>
+                    </div>
+                    <label for="nomorTelpPasien" class="form-label">Nomor Pasien</label>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">+62</span>
+                        <input type="text" class="form-control" placeholder="8123456789" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="inputEmailPasien"
+                               placeholder="Email">
+                        <label for="inputEmailPasien">Email Pasien</label>
+                    </div>
+                    <fieldset class="row mb-3">
+                        <legend class="col-form-label col-sm-4 pt-0">Status Kawin: </legend>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="statusKawinOption" id="inputKawin" value="1">
+                            <label class="form-check-label" for="inputKawin">Kawin</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="statusKawinOption" id="inputBlmKawin" value="2">
+                            <label class="form-check-label" for="inputBlmKawin">Belum Kawin</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="statusKawinOption" id="inputDuda" value="3">
+                            <label class="form-check-label" for="inputDuda">Duda/Janda</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="statusKawinOption" id="inputDibawahUmur" value="4">
+                            <label class="form-check-label" for="inputDibawahUmur">Dibawah Umur</label>
+                        </div>
+                    </fieldset>
+                    <fieldset class="row mb-3">
+                        <legend class="col-form-label col-sm-6 pt-0">Status Pendidikan: </legend>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="statusPendidikan" id="inputSD" value="1">
+                            <label class="form-check-label" for="inputSD">SD</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="statusPendidikan" id="inputSMP" value="2">
+                            <label class="form-check-label" for="inputSMP">SMP</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="statusPendidikan" id="inputSMA" value="3">
+                            <label class="form-check-label" for="inputSMA">SMA</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="statusPendidikan" id="inputSarjana" value="4">
+                            <label class="form-check-label" for="inputSarjana">Sarjana</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="statusPendidikan" id="inputtdkSekolah" value="5">
+                            <label class="form-check-label" for="inputtdkSekolah">Belum/Tidak Bersekolah</label>
+                        </div>
+                    </fieldset>
+                    <fieldset class="row mb-3">
+                        <legend class="col-form-label col-sm-6 pt-0">Pekerjaan : </legend>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="statusPekerjaan" id="inputPNS" value="1">
+                            <label class="form-check-label" for="inputPNS">PNS</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="statusPekerjaan" id="inputSwasta" value="2">
+                            <label class="form-check-label" for="inputSwasta">Pegawai Swasta</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="statusPekerjaan" id="inputBUMN" value="3">
+                            <label class="form-check-label" for="inputBUMN">BUMN</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="statusPekerjaan" id="inputPesiunan" value="4">
+                            <label class="form-check-label" for="inputPesiunan">Pensiunan</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="statusPekerjaan" id="inputBlmBekerja" value="5">
+                            <label class="form-check-label" for="inputBlmBekerja">Belum Bekerja</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="statusPekerjaan" id="inputPekerjaanLain" value="6">
+                            <input type="email" class="form-control" id="inputPekerjaan"
+                                   placeholder="Lainnya">
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+            <!---------END FORM INPUT DATA PENDAFTARAN------------->
+            <!---------START FORM INPUT PENANGGUNG JAWAB------------->
+            <div class="col-sm-12 col-xl-6">
+                <div class="bg-light rounded h-100 p-4">
+                    <h6 class="mb-4">Data Penanggung Jawab</h6>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="namaPenanggung"
+                               placeholder="Cth: Budi">
+                        <label for="namaPenanggung">Nama Penanggung Jawab</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="noPenanggung"
+                               placeholder="Cth: Budi">
+                        <label for="noPenanggung">Nomor Telepon Penanggung Jawab</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" placeholder="Leave a comment here"
+                                  id="alamatPenanggung" style="height: 150px;"></textarea>
+                        <label for="alamatPenanggung">Alamat Tempat Tinggal</label>
+                    </div><br />
+                    <h6 class="mb-2">Metode Pembayaran :</h6>
+                    <fieldset class="row mb-3">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="metodePembayaran" id="inputCash" value="1">
+                            <label class="form-check-label" for="inputCash">Cash</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="metodePembayaran" id="inputTransfer" value="2">
+                            <label class="form-check-label" for="inputTransfer">Transfer</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="metodePembayaran" id="inputBPJS" value="3">
+                            <label class="form-check-label" for="inputBPJS">BPJS</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="metodePembayaran" id="inputAsuransi" value="4">
+                            <label class="form-check-label" for="inputAsuransi">Asuransi</label>
+                        </div>
+                    </fieldset>
+                    <h6 class="mb-2">Ringkasan Masuk :</h6>
+                    <div class=" mb-3">
+                        <label for="tglMasuk" class="form-label">Tanggal Masuk: </label>
+                        <input type="date" id="tglMasuk" class="form-control">
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="inputNamaPerujuk"
+                               placeholder="">
+                        <label for="inputNamaPerujuk">Nama Perujuk</label>
+                    </div>
+                    <fieldset class="row mb-3">
+                        <legend class="col-form-label col-sm-6 pt-0">Unit Yang Dituju : </legend>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inputIGD" value="1">
+                            <label class="form-check-label" for="inputIGD">IGD</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inputUmum" value="2">
+                            <label class="form-check-label" for="inputUmum">Umum</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inputPoliGigi" value="3">
+                            <label class="form-check-label" for="inputPoliGigi">Poli Gigi</label>
+                        </div>
+                    </fieldset>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="inputNamaDokter"
+                               placeholder="">
+                        <label for="inputNamaDokter">Nama Dokter</label>
+                    </div>
+                </div>
+            </div>
+            <!---------END FORM INPUT PENANGGUNG JAWAB------------->
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        function getAge(dateString) {
+            var today = new Date();
+
+        }
+                    )};
+</script>
